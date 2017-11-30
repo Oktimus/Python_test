@@ -11,3 +11,4 @@ def glastnie(s):
 s = "hApPyHalLOweEn!"
 
 print u'Гластных звуков = ',glastnie(s)
+
