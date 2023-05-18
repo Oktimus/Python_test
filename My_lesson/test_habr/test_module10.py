@@ -1,12 +1,15 @@
 import pytest
 
+
 @pytest.fixture()
 def f_cfg_obj(request):
     """fixture: Через метод возвращает объект"""
     print('>', 'fixture: Запуск f_set_obj()')
+
     def _set_cfg(cfg):
         print('>>', 'fixture: Запуск _set_cfg()')
         return cfg.replace('переданный в', 'измененый от')
+
     return _set_cfg
 
 
